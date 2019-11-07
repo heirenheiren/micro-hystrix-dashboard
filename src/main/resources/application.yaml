@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: micro-hystrix-dashboard
+server: 
+  port: 8086
+eureka: 
+  instance: 
+    appname: ${spring.application.name}
+    prefre-ip-address: true
+  client: 
+    serviceUrl: 
+      defaultZone: http://127.0.0.1:8080/eureka/
+logger:
+  config: 
+    classpath: logback.xml
+  path: /Users/zhou/Desktop
